@@ -1,0 +1,248 @@
+﻿/* import external variables and functions here */
+@import url("/styles/common.css");
+
+/* Put page specific css here */
+
+/* reused variables here */
+:root {
+    --search-rows: 25;
+    --search-columns: 25;
+    --search-max-width: 100.00;
+    --search-column-width: 3.3332%;
+
+    --color-0: #10B5AF;
+    --color-1: #4046CA;
+    --color-2: #F68511;
+    --color-3: #DE3D82;
+    --color-4: #7E84FA;
+    --color-5: #72E16A;
+    --color-6: #147BF4;
+    --color-7: #7426D3;
+    --color-8: #E8C601;
+    --color-9: #CB5D00;
+    --color-10: #008F5E;
+    --color-11: #BCE931;
+    --color-12: #4046CA;
+    --color-13: #F68511;
+    --color-14: #DE3D82;
+    --color-15: #7E84FA;
+    --color-16: #72E16A;
+    --color-17: #147BF4;
+    --color-18: #7426D3;
+    --color-19: #E8C601;
+    --color-20: #CB5D00;
+
+    --color-highlight: var(--color-foreground);
+    --color-hover: var(--color-middleground);
+
+    --size-title-search: 2em;
+    --size-letter-search: 1em;
+    --size-word-search: 1em;
+
+}
+/* custom fonts in body */
+body {
+    font-family: Open Sans, sans-serif;
+}
+/* Everything else here */
+.main-spacer {
+    width: var(--size-0);
+}
+.line-gap {
+    height: .25em;
+}
+.main-grid {
+    display: grid;
+    width: var(--size-12);
+    grid-template-columns: repeat(var(--search-columns), var(--search-column-width) );
+    grid-template-rows: repeat( var(--search-rows) );
+    font-size: var(--size-letter-search);
+    min-width: 300px;
+}
+.main {
+    display: block;
+    width: var(--size-12);
+}
+.main-inner{
+    display: block;
+    grid-template-rows: repeat( 2 );
+    width: var(--size-12);
+    justify-content:center;
+    align-items:center;
+}
+.word_center{
+    text-align: center;
+}
+.title-huge {
+    align-content: center;
+    font-size: var(--size-title-search);
+    text-align: center;
+    font-weight: 700;
+    color: var(--color-text);
+}
+.letter {
+    border-radius: 12%;
+    text-align: center;
+    aspect-ratio: 1/1;
+    color: var(--color-text);
+    font-size: var(--size-letter-search);
+}
+.letter:hover{
+    background-color: var(--color-hover);
+}
+.selected {
+    background-color: var(--color-highlight);
+    color: var(--color-background);
+}
+.selected:hover {
+    background-color: var(--color-foreground);
+}
+.unselected {
+    background-color: var(--color-background);
+}
+.words-block{
+    width: var(--size-12);
+}
+.words-list {
+    display: grid;
+    width: var(--size-12);
+    grid-template-columns: repeat(2, 50%);
+}
+.word {
+    font-size: var(--size-word-search);
+    color: var(--color-text);
+    text-align:center;
+}
+.button-new-game {
+    width: var(--size-12);
+    text-align: center;
+    font-size: var(--size-word-search);
+    font-weight: 700;
+    border-color: var(--color-text);
+    border-style: solid;
+    background-color: var(--color-foreground);
+    color: var(--color_text);
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.button-new-game:hover{
+    background-color:var(--color-horizon);
+}
+.word-0 {
+}
+.word-1 {
+}
+.word-2 {
+}
+.word-3 {
+}
+.word-4 {
+}
+.word-5 {
+}
+.word-6 {
+}
+.word-7 {
+}
+.word-8 {
+}
+.word-9 {
+}
+.word-10 {
+}
+.word-11 {
+}
+.word-12 {
+}
+.word-13 {
+}
+.word-14 {
+}
+.word-15 {
+}
+.word-16 {
+}
+.word-17 {
+}
+.word-18 {
+}
+.word-19 {
+}
+.word-20 {
+}
+
+/* fixes for screen resolution problems */
+
+@media screen and (min-width: 320px) {  
+}
+@media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 576px) {
+    .line-gap {
+        height: 1em;
+    }
+    .word {
+        margin-top: 0.25em;
+    }
+    .main-inner {
+        display: flex;
+    }
+    .main-spacer {
+        width: var(--size-1);
+    }
+    .words-list {
+        display: grid;
+        width: var(--size-12);
+        grid-template-columns: repeat(1, 100%);
+    }
+    .main-grid {
+        max-width: 65vh;
+    }
+}
+@media screen and (min-width: 600px) {
+}
+@media screen and (min-width: 768px) {
+    :root {
+        --size-title-search: 3em;
+        --size-letter-search: 1.5em;
+        --size-word-search: 1.5em;
+    }
+}
+@media screen and (min-width: 900px) {
+}
+@media screen and (min-width: 992px) {
+}
+@media screen and (min-width: 1024px) {
+}
+@media screen and (min-width: 1025px) {
+}
+@media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1920px) {
+    :root {
+        --size-title-search: 3.1em;
+        --size-letter-search: 1.7em;
+        --size-word-search: 1.7em;
+    }
+}
+@media screen and (min-width: 2560px) {
+    :root {
+        --size-title-search: 3.4em;
+        --size-letter-search: 1.9em;
+        --size-word-search: 1.9em;
+    }
+}
+@media screen and (min-width: 3840px) {
+    :root {
+        --size-title-search: 5em;
+        --size-letter-search: 3em;
+        --size-word-search: 3em;
+    }
+}
+@media screen and (min-width: 7680px) {
+    :root {
+        --size-title-search: 6em;
+        --size-letter-search: 3.5em;
+        --size-word-search: 3.5em;
+    }
+}

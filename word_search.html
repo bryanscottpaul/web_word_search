@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- Name in search bar tab here-->
+    <title>TerminalJunky</title>
+    <!-- Your univeral css here -->
+    <link rel="stylesheet" href="./styles/common.css" />
+    <!-- Your page specific css here -->
+    <link rel="stylesheet" href="./styles/word_search.css" />
+    <!-- Your Google link description here -->
+    <meta name="description" content="Welcome to my coding cave. A place to store my legacy of code." />
+    <!-- Your Name and Authoring here -->
+    <meta name="author" content="Bryan Paul" />
+    <!-- Your Website tags here -->
+    <meta name="keywords" content="coding, scripting, java, c, c++, linux, terminal junky, terminaljunky" />
+
+    <!-- Universal web tags here -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="language" content="en-US" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- location of image within webpage tab -->
+    <link rel="icon" type="image/x-icon" href="images/icons/terminal.svg">
+
+    <!-- External style sheets and resources here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+
+    <!-- External library for the actual word search -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+
+</head>
+<body class="background">
+
+<!-- Your content here -->
+
+    <div class="main" id="mainbox">
+        <p class="line-gap"></p>
+        <p class="line-gap"></p>
+        <p class="title-huge">Word Search</p>
+        <p class="line-gap"></p>
+        <div class="main-spacer"></div>
+        <div class="main-inner">
+            <div class="main-spacer"></div>
+            <div class="main-grid" id="id_board"></div>
+            <div class="main-spacer"></div>
+            <div class="word_block">
+                <p class="line-gap"></p>
+                <button class="button-new-game" onclick="button_new_game()">New Puzzle</button>
+                <p class="line-gap"></p>
+                <div class="words-list" id="id_words">
+                </div>
+            </div>
+            <div class="main-spacer"></div>
+        </div>
+        <div class="main-spacer"></div>
+    </div>
+<p class="line-gap"></p>
+<p class="line-gap"></p>
+
+    <!-- End of your content -->
+    <!-- Close of background div -->
+    <!-- Your Universal javascript here -->
+    <script src="./scripts/common.js"></script>
+
+    <!-- Your page specific javascript here -->
+    <script src="./scripts/word_search.js"></script>
+</body>
+</html>
